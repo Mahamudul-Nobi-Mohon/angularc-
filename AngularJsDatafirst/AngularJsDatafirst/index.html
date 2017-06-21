@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="scripts/jquery-3.1.1.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <script src="service.js"></script>
+    <script src="demo.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <nav role="navigation" class="navbar navbar-inverse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#Home">Home</a></li>
+                <li><a href="#Add">Add</a></li>
+                <li><a href="#Edit">Edit</a></li>
+                <li><a href="#Delete">Delete</a></li>
+            </ul>
+        </nav>
+
+        <div ng-view></div>
+
+        <footer>
+            <p>Posted by: Hege Refsnes</p>
+            <p>
+                Contact information: <a href="mailto:someone@example.com">
+                    someone@example.com
+                </a>.
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>
